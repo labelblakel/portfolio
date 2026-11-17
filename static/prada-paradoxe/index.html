@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#cbdcc2">
+  <meta name="description" content="Odkryj Prada Paradoxe. Kwiatowy zapach, jego wyjątkowe składniki i flakon z możliwością ponownego napełnienia.">
+  <title>Prada Paradoxe — odkryj zapach</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preload" as="image" href="assets/hero-desktop.webp" media="(min-width: 701px)">
+  <link rel="preload" as="image" href="assets/hero-mobile.webp" media="(max-width: 700px)">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#odkryj">Przejdź do treści</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <main>
+    <section class="hero" id="poczatek" aria-labelledby="hero-title">
+      <picture class="hero-picture">
+        <source media="(max-width: 700px)" srcset="assets/hero-mobile.webp">
+        <img src="assets/hero-desktop.webp" alt="Emma Watson w kampanii Prada Paradoxe na tle w kolorze szałwii" width="1542" height="750" fetchpriority="high">
+      </picture>
+      <span class="hero-credit">emma watson</span>
+      <div class="hero-content">
+        <p class="eyebrow hero-enter">NOWOŚĆ</p>
+        <h1 id="hero-title" class="hero-enter"><img class="hero-logo" src="assets/logo-hero.webp" alt="Prada Paradoxe" width="339" height="81"></h1>
+        <p class="hero-subtitle hero-enter">NOWY ZAPACH DLA NIEJ</p>
+        <p class="hero-quote hero-enter">Nigdy nie jestem taka sama,<br>lecz zawsze jestem sobą.</p>
+      </div>
+      <img class="hero-bottle" src="assets/product-bottle-hq.webp" alt="" width="824" height="837" aria-hidden="true">
+      <a class="scroll-cue" href="#odkryj" aria-label="Przewiń i odkryj nowy zapach"><span>ODKRYJ</span><svg viewBox="0 0 20 32" fill="none" aria-hidden="true"><path d="M10 1v28M3 22l7 7 7-7"/></svg></a>
+    </section>
+
+    <section class="discovery section-padding" id="odkryj" aria-labelledby="discovery-title">
+      <div class="reveal">
+        <p class="eyebrow">PRADA PARADOXE</p>
+        <h2 id="discovery-title">ODKRYJ NOWY ZAPACH</h2>
+        <p class="discovery-copy">Ten kobiecy kwiatowy zapach jest zaproszeniem<br class="desktop-break"> do odkrywania i wyrażania paradoksalnej<br class="desktop-break"> wielowymiarowości kobiet.</p>
+        <span class="fine-line" aria-hidden="true"></span>
+      </div>
+    </section>
+
+    <section class="ingredients" id="skladniki" aria-label="Składniki zapachu Prada Paradoxe">
+      <div class="ingredients-stage">
+        <div class="ingredient-art reveal" data-reveal="image">
+          <img src="assets/ingredients-bg.webp" alt="Flakon Prada Paradoxe otoczony kwiatami neroli, piżmem i bursztynem" width="600" height="652" loading="lazy">
+        </div>
+        <div class="ingredient-connectors" aria-hidden="true">
+          <svg viewBox="0 0 1440 820" preserveAspectRatio="none">
+            <defs><mask id="bottle-mask"><rect width="1440" height="820" fill="white"/><path d="M225 311 L242 305 L259 308 L271 316 L333 374 L345 385 L360 371 L348 356 L348 347 L390 309 L399 309 L495 396 L495 405 L450 446 L438 446 L418 426 L401 441 L481 507 L494 522 L494 538 L485 552 L468 558 L248 558 L230 554 L219 543 L214 524 L214 342 L219 324 Z" fill="black"/></mask></defs>
+            <g mask="url(#bottle-mask)"><path class="connector connector-serenolide" d="M225 205H865"/><path class="connector connector-ambrofix" d="M562 410H865"/><path class="connector connector-neroli" d="M287 615H865"/></g>
+          </svg>
+        </div>
+        <div class="ingredient-cards">
+          <button class="ingredient-card reveal" type="button" data-ingredient="serenolide" aria-pressed="false">
+            <span class="ingredient-label">01 / INTENSYWNOŚĆ</span>
+            <span class="ingredient-name">Serenolide™</span>
+            <span class="ingredient-copy"><strong>Intensywność</strong>, dzięki najlżejszej na świecie, odnawialnej cząsteczce piżma — Serenolide™, która zapewnia zauważalny ślad już od samego początku.</span>
+            <span class="ingredient-mark" aria-hidden="true">+</span>
+          </button>
+          <button class="ingredient-card reveal" type="button" data-ingredient="ambrofix" aria-pressed="false">
+            <span class="ingredient-label">02 / ZMYSŁOWOŚĆ</span>
+            <span class="ingredient-name">Ambrofix™</span>
+            <span class="ingredient-copy"><strong>Zmysłowość</strong>, dzięki Ambrofix™ — bio-przetworzonemu bursztynowi, który ujawnia żywe ciepło.</span>
+            <span class="ingredient-mark" aria-hidden="true">+</span>
+          </button>
+          <button class="ingredient-card reveal" type="button" data-ingredient="neroli" aria-pressed="false">
+            <span class="ingredient-label">03 / ŚWIEŻOŚĆ</span>
+            <span class="ingredient-name">Neroli</span>
+            <span class="ingredient-copy"><strong>Świeżość kwiatu Neroli</strong>, dzięki zastosowanej po raz pierwszy ekstrakcji jego pąków.</span>
+            <span class="ingredient-mark" aria-hidden="true">+</span>
+          </button>
+        </div>
+        <button class="ingredient-point point-serenolide" data-ingredient="serenolide" type="button" aria-label="Podświetl opis Serenolide" aria-pressed="false"><span></span></button>
+        <button class="ingredient-point point-ambrofix" data-ingredient="ambrofix" type="button" aria-label="Podświetl opis Ambrofix" aria-pressed="false"><span></span></button>
+        <button class="ingredient-point point-neroli" data-ingredient="neroli" type="button" aria-label="Podświetl opis Neroli" aria-pressed="false"><span></span></button>
+      </div>
+    </section>
+
+    <section class="products section-padding" id="produkty" aria-label="Zapach i refill">
+      <div class="product-grid">
+        <article class="product reveal">
+          <div class="product-visual"><img src="assets/product-bottle-hq.webp" alt="Trójkątny flakon wody perfumowanej Prada Paradoxe" width="824" height="837" loading="lazy"></div>
+          <p class="eyebrow">PRADA PARADOXE</p>
+          <h2>WODA PERFUMOWANA</h2>
+          <p class="product-copy">Zapach z możliwością<br>ponownego napełnienia</p>
+          <button type="button" class="cta" aria-disabled="true" aria-describedby="demo-buttons">ODKRYJ<span aria-hidden="true">↗</span></button>
+        </article>
+        <article class="product reveal">
+          <div class="product-visual refill-visual"><img src="assets/product-refill-hq.webp" alt="Refill Prada Paradoxe 100 ml z różowym opakowaniem" width="1000" height="1000" loading="lazy"></div>
+          <p class="eyebrow">PRADA PARADOXE</p>
+          <h2>REFILL 100 ML</h2>
+          <p class="product-copy">Do ponownego<br>napełnienia flakonu</p>
+          <button type="button" class="cta" aria-disabled="true" aria-describedby="demo-buttons">ODKRYJ<span aria-hidden="true">↗</span></button>
+        </article>
+      </div>
+      <p id="demo-buttons" class="sr-only">Przyciski demonstracyjne z efektami hover. Projekt źródłowy nie zawiera docelowych linków do sklepu.</p>
+    </section>
+
+    <section class="refill" id="ponowne-napelnianie" aria-labelledby="refill-title">
+      <div class="refill-photo reveal" data-reveal="image"><img src="assets/refill-detail-hq.webp" alt="Refill i dwa flakony Prada Paradoxe na zielonym tle" width="2048" height="2048" loading="lazy"></div>
+      <div class="refill-content">
+        <div class="reveal"><p class="eyebrow">PONOWNE NAPEŁNIANIE</p><h2 id="refill-title">FLAKON W ZGODZIE<br>ZE ZRÓWNOWAŻONYM<br>PODEJŚCIEM</h2><p class="refill-intro">1 refill Paradoxe zamiast 2 flakonów 50 ml<br>pozwala uniknąć:</p></div>
+        <div class="stats">
+          <div class="stat reveal"><p class="stat-number"><span data-count="29">29</span><span>%</span></p><p>MNIEJ SZKŁA</p></div>
+          <div class="stat reveal"><p class="stat-number"><span data-count="39">39</span><span>%</span></p><p>MNIEJ PAPIERU</p></div>
+          <div class="stat reveal"><p class="stat-number"><span data-count="46">46</span><span>%</span></p><p>MNIEJ PLASTIKU</p></div>
+          <div class="stat reveal"><p class="stat-number"><span data-count="67">67</span><span>%</span></p><p>MNIEJ METALI</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gift section-padding" id="prezent" aria-labelledby="gift-title">
+      <div class="gift-image reveal" data-reveal="image"><img src="assets/gift-pouch-hq.webp" alt="Czarna kosmetyczka Prada Beauty" width="2048" height="1691" loading="lazy"></div>
+      <div class="gift-content reveal"><p class="eyebrow">PRADA PARADOXE</p><h2 id="gift-title">PREZENT<br>PRZY ZAKUPIE</h2><p>Przy zakupie nowego zapachu<br>Prada Paradoxe, kosmetyczkę<br>od marki otrzymasz w prezencie.</p><button class="cta" type="button" aria-disabled="true" aria-describedby="demo-buttons">KUP<span aria-hidden="true">↗</span></button></div>
+    </section>
+  </main>
+  <footer class="footer"><img src="assets/logo.webp" alt="Prada Paradoxe" width="283" height="68" loading="lazy"><p>Realizacja demonstracyjna na podstawie dostarczonego projektu.<br>Treści promocyjne pochodzą z materiału źródłowego.</p><a href="#poczatek" class="back-top" aria-label="Wróć na początek strony">DO GÓRY <span aria-hidden="true">↑</span></a></footer>
+  <button class="motion-control" type="button" aria-pressed="true" aria-label="Wyłącz animacje"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6v12M16 6v12"/></svg><span>Animacje</span></button>
+</body>
+</html>
