@@ -1,34 +1,41 @@
 # Prada Paradoxe — landing page
 
-Responsywna strona na podstawie pliku `Custom UI.rar`. Oryginalne grafiki oraz polskie teksty pochodzą z dostarczonego projektu. Sześć sekcji: hero, odkryj zapach, składniki, produkty, ponowne napełnianie, prezent.
+Responsywna strona na podstawie dostarczonego pliku `Custom UI.rar`. Sześć sekcji: hero, odkryj zapach, składniki, produkty, ponowne napełnianie, prezent. Oryginalne grafiki i polskie teksty pochodzą z materiału źródłowego.
 
 ## Uruchomienie
 
-Nie wymaga instalacji ani budowania. Otwórz `dist/index.html` lub uruchom:
+Strona nie wymaga instalacji zależności ani budowania. W głównym katalogu repozytorium uruchom:
 
 ```sh
-python3 -m http.server 8080 --directory dist
+python3 -m http.server 8080 --directory static/prada-paradoxe
 ```
+
+Następnie otwórz http://localhost:8080. Można też otworzyć `static/prada-paradoxe/index.html` bezpośrednio.
 
 ## Interakcje
 
-- Animacje wejścia podczas przewijania (`IntersectionObserver`), subtelne wejście hero i animowane liczby.
+- Animacje wejścia podczas przewijania, subtelne wejście hero i animowane wartości procentowe.
 - Hovery składników (białe tło 15%, skala 101,5%), przycisków oraz zdjęć produktów.
-- Składniki reagują również na klawiaturę i dotyk; Escape usuwa aktywne zaznaczenie. Punkty na zdjęciu aktywują odpowiedni opis.
-- Pasek postępu przewijania, odnośniki do sekcji i powrót na początek.
-- Obsługa `prefers-reduced-motion` i przełącznik animacji. Treść pozostaje widoczna bez JavaScriptu.
+- Obsługa dotyku i klawiatury; punkty na zdjęciu aktywują odpowiednie opisy. Escape usuwa zaznaczenie.
+- Pasek postępu przewijania, odnośnik do treści i powrót na początek.
+- Obsługa `prefers-reduced-motion` i przełącznik animacji. Bez JavaScriptu cała treść pozostaje widoczna.
 
-Przyciski ODKRYJ i KUP zachowują demonstracyjny charakter projektu: efekt hover, bez linków do sklepu. Są oznaczone `aria-disabled` i mają opis dla czytników ekranu. Promocja i procenty są treścią materiału źródłowego, a nie potwierdzeniem aktualnej oferty.
+Przyciski ODKRYJ i KUP zachowują demonstracyjny charakter projektu: efekty hover, bez docelowych linków do sklepu. Są oznaczone `aria-disabled` i opisane dla czytników ekranu. Treści promocyjne i procenty pochodzą z projektu źródłowego.
 
-## Pliki
+## Integracja i publikacja
 
-- `dist/index.html`: semantyczny HTML i treść
-- `dist/styles.css`: układ, responsywność, animacje i hovery
-- `dist/script.js`: obsługa przewijania, składników i preferencji ruchu
-- `dist/assets/`: lokalne grafiki; strona nie pobiera zewnętrznych bibliotek, fontów ani trackerów
+Gatsby kopiuje katalog `static/prada-paradoxe/` do `public/prada-paradoxe/`; po wdrożeniu portfolio strona będzie dostępna pod ścieżką `/prada-paradoxe/`. Nie zmienia istniejących stron portfolio.
 
-## Integracja z portfolio
+Cała zawartość tego katalogu jest gotowym pakietem statycznym. Można ją również opublikować niezależnie, np. przez GitHub Pages z wybranym katalogiem jako artefaktem wdrożenia.
 
-Katalog `dist` jest gotową stroną statyczną. W repozytorium Gatsby jego zawartość trafia do `static/prada-paradoxe/`; Gatsby kopiuje te pliki do `public/prada-paradoxe/`. Po wdrożeniu portfolio strona będzie dostępna pod ścieżką `/prada-paradoxe/`. Można też opublikować samą zawartość tego katalogu na dowolnym hostingu statycznym, w tym GitHub Pages.
+Podgląd opublikowano pod adresem https://prada-paradoxe-scroll.pinek545.chatgpt.site (prywatny dostęp przez ChatGPT).
 
-Zasoby marki są dostarczonym materiałem projektowym; nie przenoszą praw do znaków ani fotografii.
+## Weryfikacja
+
+- Poprawność składni JavaScriptu.
+- Kompletność lokalnych zasobów i odnośników, unikalne identyfikatory, sześć sekcji, nagłówek główny i opisy grafik.
+- Integralność grafik i SVG.
+- Testy zachowania animacji, stanów hover, kliknięć, Escape, liczników, przełącznika ruchu i preferencji ograniczenia animacji.
+- Zgodność SHA wszystkich plików binarnych wysłanych na GitHub.
+
+Wizualna weryfikacja w przeglądarce pozostała niewykonana: lokalny podgląd nie był dostępny, a logowanie do prywatnego podglądu zostało zablokowane przez automatyczną kontrolę uprawnień.
